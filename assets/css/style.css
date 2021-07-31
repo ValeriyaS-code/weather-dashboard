@@ -1,0 +1,18 @@
+body {
+  font-family: Arial, Helvetica, sans-serif
+}
+
+.logo {
+  float: center;
+  padding: 30px 30px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 35px;
+  margin: 0 auto;
+  color: #faf3dd;
+}
+
+.navbar {
+  background-color: #55828b;
+}
+
