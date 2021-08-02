@@ -48,6 +48,23 @@ fetch(currentWeatherApi).then(function(response) {
     })
 }
 
+//fetching current weather and five-day forecast
+var getCityForecast = function(city, lon, lat) {
+var oneCallApi = "https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}";
+fetch(oneCallApi).then(function(response) {
+    if (response.ok) {
+    response.json().then(function(data) {
+
+    
+    cityNameEl.textContent = "${city} (${moment().format("M/D/YYYY")})"; 
+    console.log(data)
+    currentForecast(data);
+    fiveDayForecast(data);
+});
+}
+})
+}
+
 //dispalying temperature
 var displayTemp = function(element, temperature) {
     var tempEl = document.querySelector(element);
