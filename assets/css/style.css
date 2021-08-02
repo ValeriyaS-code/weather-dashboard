@@ -1,3 +1,17 @@
 .hide {
   display: none;
 }
+
+.weather-icon {
+  height: 50px;
+  width: 50px;
+}
+
+#main {
+  background: #536878;
+  text-align: center;
+}
+
+#search, #cities, #forecast, #five-day {
+  background: #536878;
+}
