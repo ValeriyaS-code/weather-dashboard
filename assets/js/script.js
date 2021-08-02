@@ -56,7 +56,7 @@ fetch(oneCallApi).then(function(response) {
     response.json().then(function(data) {
 
     
-    cityNameEl.textContent = "${city} (${moment().format("M/D/YYYY")})"; 
+    cityNameEl.textContent = '${city} (${moment().format("M/D/YYYY")})'; 
     console.log(data)
     currentForecast(data);
     fiveDayForecast(data);
