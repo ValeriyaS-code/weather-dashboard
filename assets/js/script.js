@@ -47,3 +47,10 @@ fetch(currentWeatherApi).then(function(response) {
         alert("Unable to load weather.");
     })
 }
+
+//dispalying temperature
+var displayTemp = function(element, temperature) {
+    var tempEl = document.querySelector(element);
+    var elementText = Math.round(temperature);
+    tempEl.textContent = elementText;
+}
