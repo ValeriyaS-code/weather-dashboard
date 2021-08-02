@@ -102,3 +102,19 @@ currentWindEl.textContent = forecast.current["wind_speed"];
 var uviEl = document.querySelector("#current-uvi")
 var currentUvi = forecast.current["uvi"];
 uviEl.textContent = currentUvi;
+
+switch (true) {
+    case (currentUvi <= 2):
+        uviEl.className = "badge badge-success";
+    break;
+    case (currentUvi <= 5):
+        uviEl.className = "badge badge-warning";
+    break;
+    case (currentUvi <=7):
+        uviEl.className = "badge badge-danger";
+    break;
+    default:
+        uviEl.className = "badge text-light";
+        uviEl.setAttribute("style", "background-color: #87bba2");
+    }
+}
