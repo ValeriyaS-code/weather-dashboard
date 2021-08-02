@@ -137,3 +137,14 @@ for (var i = 1; i < 6; i++) {
     humiditySpan.textContent = forecast.daily[i].humidity;
     }
 }
+
+var saveCity = function(city) {
+for (var i = 0; i < cityArr.length; i++) {
+    if (city === cityArr[i]) {
+        cityArr.splice(i, 1);
+    }
+}
+
+cityArr.push(city);
+localStorage.setItem('cities', JSON.stringify(cityArr));
+}
