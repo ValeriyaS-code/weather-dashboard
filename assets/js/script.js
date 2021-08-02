@@ -2,6 +2,8 @@
 var cityInput = document.querySelector("#city-input");
 var cityBtn = document.querySelector("#search-btn");
 var cityNameEl = document.querySelector("#city-name");
+var cityArr = [];
+var apiKey = "235de05f6746ae6774a59552b6feb140";
 
 var formHandler = function(event) {
     var selectedCity = cityInput
